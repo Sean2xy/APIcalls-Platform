@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: temmoapi-backend
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: 'jdbc:mysql://49.232.228.46 :3306/apiplatform'
+    username: sean
+    password: zhuxiaoyao99
+
+dubbo:
+  application:
+    name: dubbo
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: nacos-registry
+    address: nacos://localhost:8848
+
+server:
+  address: 0.0.0.0
+  port: 7529
+  servlet:
+    context-path: /api
+    session:
+      cookie:
+        max-age: 2592000
+        domain: 49.232.228.46
