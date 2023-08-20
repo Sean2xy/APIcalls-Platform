@@ -87,7 +87,7 @@ There are many API platforms, but not unified enough, this platform helps enterp
 
 
 
-## 项目展示 🎰
+## Project display 🎰
 
 
 - Home page
