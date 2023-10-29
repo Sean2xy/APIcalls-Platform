@@ -104,8 +104,8 @@ public class UserInterfaceInfoController {
         if (!oldUserInterfaceInfo.getUserId().equals(user.getId()) && !userService.isAdmin(request)) {
             throw new BusinessException(ErrorCode.NO_AUTH_ERROR);
         }
-        boolean b = userInterfaceInfoService.removeById(id);
-        return ResultUtils.success(b);
+        boolean removed = userInterfaceInfoService.removeById(id);
+        return ResultUtils.success(removed);
     }
 
     /**
